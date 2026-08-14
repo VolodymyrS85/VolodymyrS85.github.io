@@ -13,7 +13,7 @@ Working on this enhancement reinforced the importance of designing databases tha
 
 ## Code Access
 
-* 📄 **Original Database Schema:** [`original/travlr.js`](./original/travlr.js)
-* 🚀 **Enhanced Database Schema:** [`enhanced/travlr.js`](./enhanced/travlr.js)
+*  **Original Database Schema:** [`original/travlr.js`](./original/travlr.js)
+*  **Enhanced Database Schema:** [`enhanced/travlr.js`](./enhanced/travlr.js)
 
 [← Back to Main Portfolio](../../index.html)

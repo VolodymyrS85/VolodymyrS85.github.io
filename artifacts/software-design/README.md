@@ -20,7 +20,6 @@ The enhancement also supports the security outcome by validating user input befo
 My overall outcome-coverage plan remains unchanged from Module One, with future milestones focusing on algorithm optimization and database enhancements.
 
 
-Reflection
 Enhancing this artifact allowed me to revisit software that I created earlier in the Computer Science program and evaluate it using professional software engineering practices. Although the original implementation worked correctly, I identified opportunities to improve maintainability, validation, and error handling without changing the application's functionality.
 One of the most valuable lessons I learned was that high-quality software is not defined only by working features. Organizing code, reducing duplication, validating input, and handling errors consistently improve long-term maintainability. The biggest challenge was ensuring that the enhancements did not introduce regressions. After implementing the changes, I thoroughly tested authentication and trip management to verify that the application continued to function correctly.
 Overall, this milestone strengthened my understanding of professional software engineering practices and increased my confidence in enhancing and maintaining existing software rather than simply developing new features.

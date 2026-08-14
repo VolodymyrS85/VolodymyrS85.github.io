@@ -4,19 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS 499 ePortfolio - Volodymyr</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            background-color: #f4f6f8;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: #0056b3;
+            margin-top: 1.5rem;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #003366;
+            color: #ffffff !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-weight: normal;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e9ecef;
+            color: #555;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
         <h1>CS 499 Computer Science ePortfolio</h1>
-        <p>Volodymyr</p>
+        <p><strong>Volodymyr</strong></p>
         <p>Computer Science | Southern New Hampshire University</p>
     </header>
 
     <main>
 
-        <section>
+        <section id="self-assessment">
             <h2>Professional Self-Assessment</h2>
 
             <p>
@@ -48,7 +118,7 @@
             </p>
 
             <p>
-                The artifacts included in this ePortfolio demonstrate different areas of my computer science knowledge while working together as parts of the Travlr Getaways application. The software design and engineering artifact, trip-data.service.ts, demonstrates how a frontend application communicates with a backend REST API and includes improvements to organization and error handling. The algorithms and data structures artifact, trips.js, demonstrates the use of filtering, sorting, price processing, and pagination to process trip data efficiently. The database artifact, travlr.js, demonstrates how database schemas can enforce data integrity, validation, uniqueness, performance, and security. Together, these artifacts show how the different layers of a full-stack application interact and how decisions made in one layer can affect the others
+                The artifacts included in this ePortfolio demonstrate different areas of my computer science knowledge while working together as parts of the Travlr Getaways application. The software design and engineering artifact, trip-data.service.ts, demonstrates how a frontend application communicates with a backend REST API and includes improvements to organization and error handling. The algorithms and data structures artifact, trips.js, demonstrates the use of filtering, sorting, price processing, and pagination to process trip data efficiently. The database artifact, travlr.js, demonstrates how database schemas can enforce data integrity, validation, uniqueness, performance, and security. Together, these artifacts show how the different layers of a full-stack application interact and how decisions made in one layer can affect the others.
             </p>
 
             <p>
@@ -56,7 +126,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="code-review">
             <h2>Code Review</h2>
 
             <p>
@@ -66,63 +136,46 @@
             </p>
 
             <p>
-                <a href="code-review.html">View Code Review</a>
+                <a class="btn" href="code-review.html">View Code Review Page</a>
             </p>
         </section>
 
-        <section>
+        <section id="artifacts">
             <h2>ePortfolio Artifacts</h2>
 
             <h3>Software Design and Engineering</h3>
-
-            <p>
-                <strong>Artifact:</strong> trip-data.service.ts
-            </p>
-
+            <p><strong>Artifact:</strong> <code>trip-data.service.ts</code></p>
             <p>
                 This artifact demonstrates improvements to the Angular service
                 responsible for communicating with the Travlr REST API.
             </p>
-
             <p>
-                <a href="artifacts/software-design/">
-                    View Software Design and Engineering Artifact
+                <a class="btn" href="artifacts/software-design/README.md">
+                    View Software Design Narrative & Artifact
                 </a>
             </p>
 
-
             <h3>Algorithms and Data Structures</h3>
-
-            <p>
-                <strong>Artifact:</strong> trips.js
-            </p>
-
+            <p><strong>Artifact:</strong> <code>trips.js</code></p>
             <p>
                 This enhancement adds filtering, sorting, pagination, and
                 supporting data-processing logic to the Travlr backend.
             </p>
-
             <p>
-                <a href="artifacts/algorithms/">
-                    View Algorithms and Data Structures Artifact
+                <a class="btn" href="artifacts/algorithms/README.md">
+                    View Algorithms Narrative & Artifact
                 </a>
             </p>
 
-
             <h3>Databases</h3>
-
-            <p>
-                <strong>Artifact:</strong> travlr.js
-            </p>
-
+            <p><strong>Artifact:</strong> <code>travlr.js</code></p>
             <p>
                 This enhancement strengthens the MongoDB data model through
                 validation rules, uniqueness constraints, and indexing.
             </p>
-
             <p>
-                <a href="artifacts/databases/">
-                    View Database Artifact
+                <a class="btn" href="artifacts/databases/README.md">
+                    View Database Narrative & Artifact
                 </a>
             </p>
 

@@ -1,92 +1,96 @@
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS 499 ePortfolio - Volodymyr S</title>
+    <title>CS 499 Capstone ePortfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #222;
-            background-color: #f4f6f8;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
+
         header {
-            background-color: #003366;
-            color: #ffffff;
-            padding: 2.5rem 1rem;
-            text-align: center;
+            border-bottom: 2px solid #0056b3;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
         }
-        header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.2rem;
+
+        /* Two-Column Flexbox Container */
+        .portfolio-grid {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
         }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+
+        /* Left Column: Assessment (takes ~60% width) */
+        .primary-column {
+            flex: 3;
         }
-        section {
-            background: #ffffff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+
+        /* Right Column: Code Review & Artifact Links (takes ~40% width) */
+        .sidebar-column {
+            flex: 2;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 24px;
+            position: sticky;
+            top: 20px;
         }
-        h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 0.5rem;
+
+        .sidebar-column h2 {
             margin-top: 0;
-        }
-        h3 {
             color: #0056b3;
-            margin-top: 1.5rem;
         }
-        a {
-            color: #0056b3;
+
+        .artifact-card {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+
+        .artifact-card a {
             text-decoration: none;
+            color: #0056b3;
             font-weight: bold;
         }
-        a:hover {
+
+        .artifact-card a:hover {
             text-decoration: underline;
         }
-        .btn {
-            display: inline-block;
-            background-color: #003366;
-            color: #ffffff !important;
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
-            margin-top: 0.5rem;
-            font-weight: normal;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #e9ecef;
-            color: #555;
-            margin-top: 3rem;
+
+        /* Mobile Layout: Stacks vertically on small screens */
+        @media (max-width: 850px) {
+            .portfolio-grid {
+                flex-direction: column;
+            }
+            .sidebar-column {
+                position: static;
+                width: 100%;
+                box-sizing: border-box;
+            }
         }
     </style>
 </head>
-
 <body>
 
     <header>
-        <h1>CS 499 Computer Science ePortfolio</h1>
-        <p><strong>Volodymyr S</strong></p>
-        <p>Computer Science | Southern New Hampshire University</p>
+        <h1>Computer Science ePortfolio</h1>
+        <p><strong>CS 499 Capstone Showcase</strong></p>
     </header>
 
-    <main>
-
-        <section id="self-assessment">
+    <div class="portfolio-grid">
+        
+        <!-- LEFT COLUMN: Professional Self-Assessment -->
+        <main class="primary-column">
             <h2>Professional Self-Assessment</h2>
 
             <p>
@@ -124,68 +128,35 @@
             <p>
                 The ePortfolio demonstrates my progression from learning individual computer science concepts to applying them to a functioning software system. The artifacts provide evidence of my skills in software engineering, algorithms and data structures, databases, security, problem solving, testing, and technical communication. They also demonstrate my ability to evaluate existing solutions, identify areas for improvement, implement and test changes, and explain my technical decisions. These are skills I plan to continue developing as I pursue opportunities in hardware testing and calibration automation.
             </p>
-        </section>
+       </main>
 
-        <section id="code-review">
+        <!-- RIGHT COLUMN: Code Review & Artifact Navigation -->
+        <aside class="sidebar-column">
             <h2>Code Review</h2>
+            <div class="artifact-card">
+                 <strong>Code Review Video:</strong><br>
+                <a href="./code-review.html">Watch Capstone Code Review</a>
+            </div>
 
-            <p>
-                The code review examines the original Travlr Getaways application
-                and identifies opportunities for improvement in software design,
-                algorithms and data structures, and database development.
-            </p>
+            <h2 style="margin-top: 24px;">Artifact Showcase</h2>
+            
+            <div class="artifact-card">
+                 <strong>Software Design & Engineering</strong><br>
+                <a href="artifacts/software-design/index.html">View Artifact Showcase →</a>
+            </div>
 
-            <p>
-                <a class="btn" href="code-review.html">View Code Review Page</a>
-            </p>
-        </section>
+            <div class="artifact-card">
+                 <strong>Algorithms & Data Structures</strong><br>
+                <a href="artifacts/algorithms/index.html">View Artifact Showcase →</a>
+            </div>
 
-        <section id="artifacts">
-            <h2>ePortfolio Artifacts</h2>
+            <div class="artifact-card">
+                 <strong>Databases</strong><br>
+                <a href="artifacts/databases/index.html">View Artifact Showcase →</a>
+            </div>
+        </aside>
 
-            <h3>Software Design and Engineering</h3>
-            <p><strong>Artifact:</strong> <code>trip-data.service.ts</code></p>
-            <p>
-                This artifact demonstrates improvements to the Angular service
-                responsible for communicating with the Travlr REST API.
-            </p>
-            <p>
-                <a class="btn" href="artifacts/software-design/index.html">
-                    View Software Design Narrative & Artifact
-                </a>
-            </p>
-
-            <h3>Algorithms and Data Structures</h3>
-            <p><strong>Artifact:</strong> <code>trips.js</code></p>
-            <p>
-                This enhancement adds filtering, sorting, pagination, and
-                supporting data-processing logic to the Travlr backend.
-            </p>
-            <p>
-                <a class="btn" href="artifacts/algorithms/index.html">
-                    View Algorithms Narrative & Artifact
-                </a>
-            </p>
-
-            <h3>Databases</h3>
-            <p><strong>Artifact:</strong> <code>travlr.js</code></p>
-            <p>
-                This enhancement strengthens the MongoDB data model through
-                validation rules, uniqueness constraints, and indexing.
-            </p>
-            <p>
-                <a class="btn" href="artifacts/databases/index.html">
-                    View Database Narrative & Artifact
-                </a>
-            </p>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>CS 499 Capstone | Southern New Hampshire University</p>
-    </footer>
+    </div>
 
 </body>
 </html>

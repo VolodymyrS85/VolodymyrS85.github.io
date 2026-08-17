@@ -7,12 +7,13 @@ View the fully rendered ePortfolio website here:
  **[https://VolodymyrS85.github.io/](https://VolodymyrS85.github.io/)**
 
 ##  Repository Structure
-* `index.html` - Main portfolio landing page containing the Professional Self-Assessment.
 * `artifacts/` - Individual category showcases:
   * `software-design/` - Software Design & Engineering (`trip-data.service.ts`)
   * `algorithms/` - Algorithms & Data Structures (`trips.js`)
   * `databases/` - Databases (`travlr.js`)
 * `travlr/` - Baseline Travlr Getaways MEAN Stack application (main branch)
+* `index.html` - Main portfolio landing page containing the Professional Self-Assessment.
+* `README.md` - Capstone repository documentation.
 
 ###  Branch & Capstone Enhancements
 

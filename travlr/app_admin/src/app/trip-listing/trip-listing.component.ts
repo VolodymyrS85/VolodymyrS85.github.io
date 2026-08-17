@@ -37,24 +37,28 @@ export class TripListingComponent implements OnInit {
   }
 
   private getStuff(): void {
-    this.tripDataService.getTrips()
-      .subscribe({
-        next: (value: any) => {
-          this.trips = value;
-          if(value.length > 0)
-          {
-            this.message = 'There are ' + value.length + ' trips available.';
-          }
-          else{
-            this.message = 'There were no trips retrieved from the database';
-          }
-          console.log(this.message);
-        },
-        error: (error: any) => {
-          console.log('Error: ' + error);
+  this.tripDataService.getTrips()
+    .subscribe({
+      next: (value: any) => {
+
+        // The enhanced API returns trip data inside the "trips" property.
+        this.trips = value.trips;
+
+        if (value.trips.length > 0) {
+          this.message = 'There are ' + value.trips.length + ' trips available.';
         }
-      })
-  }
+        else {
+          this.message = 'There were no trips retrieved from the database';
+        }
+
+        console.log(this.message);
+      },
+
+      error: (error: any) => {
+        console.log('Error: ' + error);
+      }
+    });
+}
 
   ngOnInit(): void {
     console.log('ngOnInit');

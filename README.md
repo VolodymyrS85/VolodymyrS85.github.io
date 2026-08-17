@@ -12,3 +12,10 @@ View the fully rendered ePortfolio website here:
   * `software-design/` - Software Design & Engineering (`trip-data.service.ts`)
   * `algorithms/` - Algorithms & Data Structures (`trips.js`)
   * `databases/` - Databases (`travlr.js`)
+* `travlr/` - Baseline Travlr Getaways MEAN Stack application (main branch)
+
+###  Branch & Capstone Enhancements
+
+* **`main` Branch:** Contains the baseline `travlr/` application codebase.
+* **`feature/travlr-enhancements` Branch:** Contains the enhanced `travlr_enhanced/` application codebase, featuring updated Express REST API controllers (`trips.js`), expanded Mongoose schema validation (`travlr.js`), and modular Angular service integration.
+* **Pull Request:** Serves as the formal code review diff comparing `travlr/` against `travlr_enhanced/` across software design, algorithms, and database layers.
